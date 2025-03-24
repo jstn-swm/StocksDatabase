@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", serif;
+  font-size: 15px;
+}
+:root {
+  --green: hsla(141, 83%, 65%, 0.775);
+}
+/* Nav bar */
+nav {
+  width: 100%;
+  border-bottom: 4px solid var(--green);
+  background-color: black;
+  padding: 5px;
+}
+ul {
+  list-style-type: none;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+}
+li a:hover {
+  background-color: var(--green);
+  border-radius: 5px;
+}
+
+.right-nav {
+  margin-left: 10%;
+}
+
+.search-bar {
+  display: inline-block;
+
+  background-color: white;
+}
+/* Main */
+main {
+  background-color: hsl(220, 4%, 15%);
+  color: lightgrey;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+td,
+th {
+  padding: 5px;
+}
+button {
+  padding: 10px 20px;
+  background-color: rgb(57, 90, 219);
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+.move-up {
+  background-image: url("pictures/icons/icons8-collapse-arrow-48.png");
+}
+/* Logo, icons, pictures */
+.icon {
+  width: 10%;
+  white-space: nowrap;
+}
+.logo {
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+a[href="#"] {
+  padding: 0;
+  width: 3rem;
+  height: auto;
+  margin: 0px 5px;
+}
+a[href="#"]:hover {
+  border-radius: 0;
+  background-color: black;
+}
+.search-icon {
+  width: 28px;
+  height: auto;
+}
